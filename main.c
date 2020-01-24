@@ -22,7 +22,7 @@ int main(void) {
     char data[LINE_MAX];
     int data_num=0;
     int bad_data_num=0;
-    char group[GROUP_NUM][GROUP_LEN+1]={"AKB","SKE","HKT"git config --global https.proxy ""};
+    char group[GROUP_NUM][GROUP_LEN+1]={"AKB","SKE","HKT"};
     IDOL *idols;
     int  index=0;
     int bad_data[LINE_MAX];
