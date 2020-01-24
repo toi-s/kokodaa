@@ -1,10 +1,3 @@
-//
-//  main.c
-//  期末
-//
-//  Created by 鈴木斗惟 on 2020/01/24.
-//  Copyright © 2020 鈴木斗惟. All rights reserved.
-//
 
 #pragma warning(disable:4996)
 
