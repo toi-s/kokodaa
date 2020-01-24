@@ -47,7 +47,7 @@ int main(void) {
         index++;
     }
     
-    //AKB,SKE,HKT以外のデータナンバーを格納
+   
     for(i=0;i<data_num;i++){
         if(strcmp(idols[i].group,group[0])!=0 && strcmp(idols[i].group,group[1])!=0 && strcmp(idols[i].group,group[2])!=0){
             bad_data[j++] = i;
@@ -55,7 +55,7 @@ int main(void) {
         }
     }
     
-    //データの最大の人物のナンバーと合計を格納
+    
     for(i=0;i<GROUP_NUM;i++){
         max = sum = 0;
         for(j=0;j<index;j++){
@@ -75,7 +75,7 @@ int main(void) {
     
     fclose(fp);
     
-    //AKB,SKEのほうをtxtファイルに
+   
     if((fp=fopen("data2.txt","w+"))==NULL){
         exit(EXIT_FAILURE);
     }
@@ -86,7 +86,7 @@ int main(void) {
     
     fclose(fp);
     
-    //AKB,SKEのほうじゃないをtxtファイルに
+   
     if((fp=fopen("data3.txt","w+"))==NULL){
         exit(EXIT_FAILURE);
     }
