@@ -78,8 +78,7 @@ int main(void) {
    
     if((fp=fopen("data2.txt","w+"))==NULL){
         exit(EXIT_FAILURE);
-    }
-    
+    }    
     for(i=0;i<GROUP_NUM;i++){
         fprintf(fp,"%-3s %-6d  %-12s\n",group[i],good_data[i][1],idols[good_data[i][0]].name);
     }
@@ -92,7 +91,7 @@ int main(void) {
     }
     
     for(i=0;i<bad_data_num;i++){
-        fprintf(fp,"%-3s %-6d  %-12s\n",idols[bad_data[i]].name,idols[bad_data[i]].score,idols[bad_data[i]].group);
+        fprintf(fp,"%-6s %-3d  %-12s\n",idols[bad_data[i]].name,idols[bad_data[i]].score,idols[bad_data[i]].group);
     }
     
     fclose(fp);
